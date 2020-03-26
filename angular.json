@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "LibraryManagementSystem": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "LibraryManagementSystem"
+    }
+  },
+  "defaultProject": "LibraryManagementSystem",
+  "cli": {
+    "analytics": "633e5fab-e8d8-4446-a0f8-a04e4f60a044"
+  }
 }
