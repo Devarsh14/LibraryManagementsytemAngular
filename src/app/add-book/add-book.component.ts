@@ -10,7 +10,7 @@ import { FormBuilder } from '@angular/forms';
 export class AddBookComponent implements OnInit {
 
   addBookToLibraryForm = this.fb.group({
-  bookname: ['', Validators.minLength(3)],
+  bookname: ['', [Validators.minLength(3), Validators.required]],
   bookISBN: ['', Validators.required],
 });
 
