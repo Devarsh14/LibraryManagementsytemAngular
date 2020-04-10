@@ -1,18 +1,28 @@
-<p>add-book works!</p>
+<div class="container">
 
+  <form [formGroup]="addBookToLibraryForm" (ngSubmit)="onSubmit()">
 
-<form [formGroup]="addBookToLibraryForm">
+      <div class="form-group">
+        <label for="BooksName" class="col">Book name</label>
+        <input type="text" formControlName="BooksName" class="form-control" />
+        <div *ngIf="bookname.touched && bookname.invalid" class="alert alert-danger">
+          Bookname Required
+        </div>
+      </div>
 
-<div class="form-group">
-  <label for="exampleInputEmail1">Book name</label>
-  <input type="text" formControlName="bookname" class="form-control">
-<div *ngIf="bookname.touched && bookname.invalid" class="alert alert-danger"> Bookname Required</div>
-</div>
-
-<div class="form-group">
-  <label for="exampleInputEmail1">Book ISBN</label>
-  <input type="text" formControlName="bookISBN" class="form-control">
-</div>
-
-</form>
+      <div class="form-group">
+        <label for="AuthorName" class="col">AuthorName</label>
+        <input type="text" formControlName="AuthorName" class="form-control" />
+      </div>
+      <!-- <div class="form-group">
+        <label for="AuthorName" class="col">Isbn</label>
+        <input type="text" formControlName="Isbn" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="AuthorName" class="col">BookPrice</label>
+        <input type="text" formControlName="BookPrice" class="form-control" />
+      </div> -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 
