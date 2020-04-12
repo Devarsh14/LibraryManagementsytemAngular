@@ -8,7 +8,11 @@ import { AddBookComponent } from './add-book/add-book.component';
 const routes: Routes = [
 
   {path: 'booklist', component: ListOfBooksComponent},
+  // defautl page load  component or route empty string will redirect to booklist
   {path: '', redirectTo: 'booklist', pathMatch: 'full'},
+
+  {path: 'addbook', component: AddBookComponent},
+  // any thing which does not match will be redirect to the 404 alternative page not found
   {path: '**', component: PageNotFoundComponent}
 ];
 
