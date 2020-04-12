@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { CreateBookService } from './create-book.service';
 import { ListOfBooksComponent } from './list-of-books/list-of-books.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddBookComponent,
-    ListOfBooksComponent
+    ListOfBooksComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

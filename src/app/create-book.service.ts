@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +15,8 @@ export class CreateBookService {
     console.log('Message from create book service');
     console.log(book);
 
-    return this.http.post<any>(this.url, book)
-
+    return this.http.post<any>(this.url, book);
   }
+
+
 }
