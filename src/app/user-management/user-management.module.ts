@@ -10,6 +10,11 @@ import { AdduserComponent } from './adduser/adduser.component';
   imports: [
     CommonModule,
     UserManagementRoutingModule
+  ],
+  // This is required to use component from this module to other module where this module is consuming.
+  exports:[
+    AdduserComponent
+
   ]
 })
 export class UserManagementModule { }
