@@ -10,6 +10,7 @@ import { AddBookComponent } from './add-book/add-book.component';
 import { CreateBookService } from './create-book.service';
 import { ListOfBooksComponent } from './list-of-books/list-of-books.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { UserManagementModule } from './user-management/user-management.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UserManagementModule
   ],
   providers: [CreateBookService],
   bootstrap: [AppComponent]
